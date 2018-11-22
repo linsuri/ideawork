@@ -3,7 +3,6 @@ import Header from './Header'
 import SwipableCarousel from './SwipableCarousel'
 import ContentContainer from './ContentContainer'
 import Footer from './Footer'
-// import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {

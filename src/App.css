@@ -24,6 +24,14 @@
   height: 40px;
 }
 
+.content-container {
+  padding: 50px 100px 100px 100px;
+}
+
+.content {
+  
+}
+
 .footer {
   padding: 60px 140px;
   text-align: center;

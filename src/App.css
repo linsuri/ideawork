@@ -32,6 +32,11 @@
   font-weight: 500;
 }
 
+.footer > p > a {
+  color: black;
+  text-decoration: underline;
+}
+
 /* .App {
   text-align: center;
 }

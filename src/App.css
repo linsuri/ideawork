@@ -21,11 +21,23 @@
 .header {
   padding: 45px 140px 5%;
   /* font-family: 'Springville'; <-- not working*/
+  text-align: right;
 }
 
 .header > img {
-  /* width: 25%; */
   height: 40px;
+  float: left;
+}
+
+.header > p {
+  padding: 10px 10px 5%;
+  display: inline;
+}
+
+.burger {
+  float: right;
+  display: inline-block;
+  padding: 0px 10px 5%;
 }
 
 .content-container {

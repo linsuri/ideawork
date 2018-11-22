@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header'
+import SwipableCarousel from './SwipableCarousel'
 import ContentContainer from './ContentContainer'
 import Footer from './Footer'
 // import logo from './logo.svg';
@@ -10,7 +11,7 @@ class App extends Component {
     return (
       <div className="app">
         <Header />
-        {/* <Carousel /> */}
+        <SwipableCarousel />
         <ContentContainer />
         <Footer />
       </div>

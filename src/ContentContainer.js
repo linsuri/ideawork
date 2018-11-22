@@ -4,7 +4,7 @@ import React from 'react'
 
 const ContentContainer = () => {
 
-  // const ContentArr = ContentInfo.map((content, index) => <Content key={index} date={content.date} title={content.title} url={content.url} }/>)
+  // const ContentArr = ContentInfo.map(content => <Content key={content.id} date={content.date} title={content.title} url={content.url} }/>)
 
   return (
 

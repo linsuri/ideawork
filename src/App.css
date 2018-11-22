@@ -1,4 +1,30 @@
-.App {
+@font-face {
+  font-family: 'ACaslonPro';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url(fonts/ACaslonPro-Regular.otf) format('otf'),
+}
+
+@font-face {
+  font-family: 'Springville';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url(fonts/Springville-Regular3.otf) format('otf'),
+}
+
+.header {
+  padding: 45px 140px;
+  /* font-family: 'Springville'; <-- not working*/
+}
+
+.header > img {
+  /* width: 25%; */
+  height: 40px;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -29,4 +55,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

@@ -1,18 +1,13 @@
-/* @font-face {
+@font-face {
   font-family: 'ACaslonPro';
-  font-style: normal;
-  font-weight: normal;
-  src:
-    url(fonts/ACaslonPro-Regular.otf) format('otf'),
+  src: url('fonts/ACaslonPro-Regular.otf');
+
 }
 
 @font-face {
   font-family: 'Springville';
-  font-style: normal;
-  font-weight: normal;
-  src:
-    url(fonts/Springville-Regular3.otf) format('otf'),
-} */
+  src: url('fonts/Springville-Regular3.otf');
+}
 
 @media (min-width: 600px) {
 
@@ -20,7 +15,6 @@
 
 .header {
   padding: 45px 140px 5%;
-  /* font-family: 'Springville'; <-- not working*/
   text-align: right;
 }
 
@@ -49,14 +43,28 @@
 
 .content {
   display: inline-block;
+  font-size: 0.6em;
+  color: gray;
 }
 
 .content > img {
   width: 100%;
 }
 
-.content > p > a {
+.content > h1 {
+  font-family: 'ACaslonPro', sans-serif;
+  font-weight: 100;
   color: black;
+}
+
+.present {
+  font-family: 'ACaslonPro', sans-serif;
+  font-weight: 100;
+  font-size: 1.2em;
+}
+
+.content > p > a {
+  color: gray;
   text-decoration: underline;
 }
 
@@ -70,7 +78,6 @@
 .footer {
   padding: 60px 140px;
   text-align: center;
-  /* font-family: 'Springville'; <-- not working*/
   font-size: 0.7em;
   font-weight: 500;
 }

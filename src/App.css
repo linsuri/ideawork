@@ -14,7 +14,7 @@
 }
 
 .header {
-  padding: 3.5% 7% 3.5% 12%;
+  padding: 3.5% 8% 3.5% 8%;
   text-align: right;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .content-container {
-  padding: 6% 8% 5% 8%;
+  padding: 5% 8% 5% 8%;
   -webkit-column-count: 3; /* Chrome, Safari, Opera */
   -moz-column-count: 3; /* Firefox */
   column-count: 3;

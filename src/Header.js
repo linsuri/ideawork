@@ -31,7 +31,7 @@ class Header extends React.Component {
             borderRadius={0}
             animationDuration={0.5}
           />
-        </div>  
+        </div>
       </div>
     )
   }

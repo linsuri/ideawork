@@ -14,72 +14,91 @@
 }
 
 .header {
-  padding: 45px 140px 5%;
+  padding: 3.5% 7% 3.5% 12%;
   text-align: right;
 }
 
 .header > img {
-  height: 40px;
+  width: 17%;
   float: left;
 }
 
 .header > p {
-  padding: 10px 10px 5%;
+  padding: 1%;
   display: inline;
+  font-size: 0.8vw
 }
 
 .burger {
   float: right;
   display: inline-block;
-  padding: 0px 10px 5%;
+  padding: 0% 1%;
 }
 
 .content-container {
-  padding: 50px 100px 100px 100px;
+  padding: 6% 8% 5% 8%;
   -webkit-column-count: 3; /* Chrome, Safari, Opera */
   -moz-column-count: 3; /* Firefox */
   column-count: 3;
+  -webkit-column-gap: 2%;
+  -moz-column-gap: 2%;
+  column-gap: 2%;
 }
 
 .content {
   display: inline-block;
-  font-size: 0.6em;
-  color: gray;
+  font-size: 0.8vw;
+  padding: 0% 5% 10% 5%;
 }
 
-.content > img {
+.content > a > img {
   width: 100%;
 }
 
-.content > h1 {
-  font-family: 'ACaslonPro', sans-serif;
+.date {
+  color: gray;
+  padding: 10% 0% 3% 0%;
+}
+
+.title {
+  font-family: 'Springville', sans-serif;
   font-weight: 100;
+  font-size: 3.5vw;
+  line-height: 100%;
   color: black;
+  margin: 0%;
+}
+
+.content > a:hover, a:active {
+  color: black;
+  text-decoration: underline;
 }
 
 .present {
   font-family: 'ACaslonPro', sans-serif;
   font-weight: 100;
-  font-size: 1.2em;
+  font-size: 1vw;
+  color: black;
+  padding: 8% 0% 8% 0%;
 }
 
 .content > p > a {
-  color: gray;
+  color: black;
   text-decoration: underline;
 }
 
 .content > hr {
   border: 0;
   height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 0.1vw solid rgba(0, 0, 0, 0.1);
+  border-bottom: 0.1vw solid rgba(255, 255, 255, 0.3);
 }
 
 .footer {
-  padding: 60px 140px;
+  padding: 5%;
   text-align: center;
-  font-size: 0.7em;
-  font-weight: 500;
+  font-size: 0.8vw;
+  font-weight: 400;
 }
 
 .footer > p > a {

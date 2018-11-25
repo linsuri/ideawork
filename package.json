@@ -8,8 +8,7 @@
     "react-hamburger-menu": "^1.1.1",
     "react-native": "^0.57.5",
     "react-responsive-carousel": "^3.1.43",
-    "react-scripts": "2.1.1",
-    "webpack": "^4.26.1"
+    "react-scripts": "2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

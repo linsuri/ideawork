@@ -9,10 +9,6 @@
   src: url('fonts/Springville-Regular3.otf');
 }
 
-@media (min-width: 600px) {
-
-}
-
 .header {
   padding: 3.5% 8% 3.5% 8%;
   text-align: right;
@@ -24,6 +20,7 @@
 
 .header > img {
   width: 17%;
+  height: auto;
   float: left;
 }
 
@@ -37,6 +34,26 @@
   float: right;
   display: inline-block;
   padding: 0% 1%;
+}
+
+.carousel {
+  max-width: 1440px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* org 402/1000 = 578.88/1440
+    h/w         h/w
+
+smallest clipped sides 3/4 = 578.88/771.84
+
+maintain 3/4 ratio scale down  */
+
+.carousel-img {
+  width: calc(100%);
+  height: calc((100vw) * 0.75);
+  object-fit: cover;
 }
 
 .content-container {
@@ -57,6 +74,7 @@
 
 .content > a > img {
   width: 100%;
+  height: auto;
 }
 
 .date {
@@ -86,7 +104,12 @@
   padding: 8% 0% 8% 0%;
 }
 
-.content > p > a {
+.present > a {
+  color: black;
+  text-decoration: underline;
+}
+
+.present > a:hover, a:active {
   color: black;
   text-decoration: underline;
 }
@@ -94,8 +117,24 @@
 .content > hr {
   border: 0;
   height: 0;
-  border-top: 0.1vw solid rgba(0, 0, 0, 0.1);
-  border-bottom: 0.1vw solid rgba(255, 255, 255, 0.3);
+  border-top: 0.2vh solid rgba(0, 0, 0, 0.1);
+  border-bottom: 0.2vh solid rgba(255, 255, 255, 0.3);
+}
+
+.readmore {
+  font-size: 0.8vw;
+  text-align: center;
+  color: gray;
+  padding: 100% 0% 3% 0%;
+}
+
+.readmore > a {
+  color: gray;
+}
+
+.readmore > a:hover, a:active {
+  color: gray;
+  text-decoration: underline;
 }
 
 .footer {
@@ -110,17 +149,85 @@
   text-decoration: underline;
 }
 
-/* .App {
-  text-align: center;
+
+/* mobile OR tablet portrait only */
+@media only screen
+/* and (min-width : 320px) */
+and (max-width : 812px)
+, (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : portrait) {
+
+  /* HEADER */
+  .header {
+    line-height: 35px;
+    height: 50px;
+    padding: 1% 8% 1% 8%;
+  }
+
+  .header > img {
+    width: 25%;
+    height: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .header > p {
+    padding: 2%;
+    font-size: 1.6vw;
+  }
+
+  .burger {
+    position: relative;
+    top: 25%;
+    padding: 0% 2%;
+  }
+
+  /* GRID */
+  .content-container {
+    padding: 5% 4% 5% 4%;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+  }
+
+  .content-container > p {
+    /* padding: 100% 0% 3% 0%; */
+  }
+
+  .content {
+    font-size: 1.6vw;
+    /* padding: 0% 5% 10% 5%; */
+  }
+
+  .title {
+    font-size: 3.5vw;
+  }
+
+  .present {
+    font-size: 1.7vw;
+  }
+
+  .content > hr {
+    border-top: 0.2vh solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.2vh solid rgba(255, 255, 255, 0.3);
+  }
+
+  .readmore {
+    font-size: 1.6vw;
+    padding: 20% 0% 3% 0%;
+  }
+
+  /* FOOTER */
+  .footer {
+    font-size: 1.4vw;
+  }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
+@media only screen
+and (min-width : 772px) {
+  .carousel-img {
+    max-height: 578.88px;
+    object-fit: cover;
+  }
+}

@@ -2,9 +2,34 @@ import React from 'react'
 import Content from './Content'
 import ContentInfo from './ContentInfo'
 
-const ContentContainer = () => {
+class ContentContainer extends React.Component {
 
-  const reorder = (arr, columns) => {
+  constructor(props) {
+    super(props)
+    this.state = {
+      width: 0,
+      height: 0,
+    }
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+
+  componentDidMount() {
+    this.updateWindowDimensions()
+    window.addEventListener('resize', this.updateWindowDimensions)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions)
+  }
+
+  updateWindowDimensions = () => {
+    this.setState({
+      width: window.innerWidth,
+      height: window.innerHeight
+    })
+  }
+
+  reorder = (arr, columns) => {
     const newContentArr = []
     let currentColumn = 0
 
@@ -20,11 +45,15 @@ const ContentContainer = () => {
     return newContentArr
   }
 
-  return (
-    <div className="content-container">
-      {reorder(ContentInfo, 3).map(content => <Content key={content.id} imgsrc={content.imgsrc} date={content.date} title={content.title} url={content.url} />)}
-    </div>
-  )
+  render() {
+    let columns = (this.state.width > 812) || (768 < this.state.width && this.state.width < 1024 && this.state.width < this.state.height) ? 3 : 2
+    return (
+      <div className="content-container">
+        {this.reorder(ContentInfo, columns).map(content => <Content key={content.id} imgsrc={content.imgsrc} date={content.date} title={content.title} url={content.url} />)}
+        <p className="readmore"><a href="https://www.google.com">READ MORE</a></p>
+      </div>
+    )
+  }
 
 }
 

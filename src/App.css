@@ -91,6 +91,10 @@ maintain 3/4 ratio scale down  */
   margin: 0%;
 }
 
+.content > a {
+  color: black;
+}
+
 .content > a:hover, a:active {
   color: black;
   text-decoration: underline;

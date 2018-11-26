@@ -55,11 +55,7 @@ smallest clipped sides 3/4 = 578.88/771.84 */
 
 .content-container {
   padding: 5% 8% 5% 8%;
-  -webkit-column-count: 3; /* Chrome, Safari, Opera */
-  -moz-column-count: 3; /* Firefox */
   column-count: 3;
-  -webkit-column-gap: 2%;
-  -moz-column-gap: 2%;
   column-gap: 2%;
 }
 
@@ -189,8 +185,6 @@ and (orientation : portrait) {
   /* GRID */
   .content-container {
     padding: 5% 4% 5% 4%;
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
     column-count: 2;
   }
 

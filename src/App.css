@@ -37,10 +37,39 @@
 }
 
 .carousel {
-  max-width: 1440px;
   position: relative;
+  max-width: 1440px;
   left: 50%;
   transform: translateX(-50%);
+  display: block;
+}
+
+.carousal-text {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 8%;
+  z-index: 1;
+  color: white;
+  font-family: 'ACaslonPro', sans-serif;
+  font-weight: 100;
+}
+
+.carousal-title {
+  font-family: 'Springville', sans-serif;
+  font-weight: 100;
+  font-size: 5vw;
+  line-height: 100%;
+  margin: 0%;
+}
+
+.carousal-date {
+  font-size: 2.5vw;
+}
+
+.carousal-p {
+  font-size: 1.5vw;
+  width: 58%;
 }
 
 /* org h/w = 578.88/1440
@@ -51,6 +80,7 @@ smallest clipped sides 3/4 = 578.88/771.84 */
   width: calc(100%);
   height: calc((100vw) * 0.75);
   object-fit: cover;
+  filter: brightness(0.60);
 }
 
 .content-container {
@@ -70,12 +100,12 @@ smallest clipped sides 3/4 = 578.88/771.84 */
   height: auto;
 }
 
-.date {
+.content-date {
   color: gray;
   padding: 10% 0% 3% 0%;
 }
 
-.title {
+.content-title {
   font-family: 'Springville', sans-serif;
   font-weight: 100;
   font-size: 3.5vw;
@@ -94,7 +124,7 @@ smallest clipped sides 3/4 = 578.88/771.84 */
   text-decoration: underline;
 }
 
-.present {
+.content-present {
   font-family: 'ACaslonPro', sans-serif;
   font-weight: 100;
   font-size: 1vw;
@@ -102,12 +132,12 @@ smallest clipped sides 3/4 = 578.88/771.84 */
   padding: 8% 0% 8% 0%;
 }
 
-.present > a {
+.content-present > a {
   color: black;
   text-decoration: underline;
 }
 
-.present > a:hover, a:active {
+.content-present > a:hover, a:active {
   color: black;
   text-decoration: underline;
 }
@@ -182,6 +212,24 @@ and (orientation : portrait) {
     padding: 0% 0% 0% 2%;
   }
 
+  /* CAROUSEL */
+  .carousal-text {
+    left: 4%;
+  }
+
+  .carousal-title {
+    font-size: 8vw;
+  }
+
+  .carousal-date {
+    font-size: 3.5vw;
+  }
+
+  .carousal-p {
+    font-size: 2.5vw;
+    width: 80%
+  }
+
   /* GRID */
   .content-container {
     padding: 5% 4% 5% 4%;
@@ -197,11 +245,11 @@ and (orientation : portrait) {
     /* padding: 0% 5% 10% 5%; */
   }
 
-  .title {
+  .content-title {
     font-size: 4vw;
   }
 
-  .present {
+  .content-present {
     font-size: 1.7vw;
   }
 

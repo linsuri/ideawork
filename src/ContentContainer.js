@@ -10,7 +10,6 @@ class ContentContainer extends React.Component {
       width: 0,
       height: 0,
     }
-    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
   componentDidMount() {
@@ -25,7 +24,7 @@ class ContentContainer extends React.Component {
   updateWindowDimensions = () => {
     this.setState({
       width: window.innerWidth,
-      height: window.innerHeight
+      height: window.innerHeight,
     })
   }
 
@@ -35,7 +34,7 @@ class ContentContainer extends React.Component {
 
     while (currentColumn < columns) {
       for (let i = 0; i < arr.length; i += columns) {
-        if (arr[i + currentColumn]) {
+        if (!!arr[i + currentColumn]) {
           newContentArr.push(arr[i + currentColumn])
         }
       }

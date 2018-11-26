@@ -43,12 +43,9 @@
   transform: translateX(-50%);
 }
 
-/* org 402/1000 = 578.88/1440
-    h/w         h/w
+/* org h/w = 578.88/1440
 
-smallest clipped sides 3/4 = 578.88/771.84
-
-maintain 3/4 ratio scale down  */
+smallest clipped sides 3/4 = 578.88/771.84 */
 
 .carousel-img {
   width: calc(100%);
@@ -221,7 +218,7 @@ and (orientation : portrait) {
 
   .readmore {
     font-size: 1.6vw;
-    padding: 20% 0% 3% 0%;
+    padding: 0% 0% 3% 0%;
   }
 
   /* FOOTER */

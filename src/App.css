@@ -193,12 +193,12 @@ and (orientation : portrait) {
   }
 
   .content {
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     /* padding: 0% 5% 10% 5%; */
   }
 
   .title {
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
 
   .present {

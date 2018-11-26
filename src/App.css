@@ -127,11 +127,11 @@ smallest clipped sides 3/4 = 578.88/771.84 */
 }
 
 .readmore > a {
+  text-decoration: none;
   color: gray;
 }
 
 .readmore > a:hover, a:active {
-  color: gray;
   text-decoration: underline;
 }
 

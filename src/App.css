@@ -73,7 +73,6 @@
 }
 
 /* org h/w = 578.88/1440
-
 smallest clipped sides 3/4 = 578.88/771.84 */
 
 .carousel-img {
@@ -237,12 +236,10 @@ and (orientation : portrait) {
   }
 
   .content-container > p {
-    /* padding: 100% 0% 3% 0%; */
   }
 
   .content {
     font-size: 1.4vw;
-    /* padding: 0% 5% 10% 5%; */
   }
 
   .content-title {
@@ -269,6 +266,7 @@ and (orientation : portrait) {
   }
 }
 
+/* carousel should not scale 4/3 ratio when screen is wider than 772px (4/3 of the height of carousel images)  */
 @media only screen
 and (min-width : 772px) {
   .carousel-img {

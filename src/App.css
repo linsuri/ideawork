@@ -33,7 +33,7 @@
 .burger {
   float: right;
   display: inline-block;
-  padding: 0% 1%;
+  padding: 0% 0% 0% 1%;
 }
 
 .carousel {
@@ -179,7 +179,7 @@ and (orientation : portrait) {
   .burger {
     position: relative;
     top: 25%;
-    padding: 0% 2%;
+    padding: 0% 0% 0% 2%;
   }
 
   /* GRID */

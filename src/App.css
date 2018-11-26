@@ -56,13 +56,13 @@ smallest clipped sides 3/4 = 578.88/771.84 */
 .content-container {
   padding: 5% 8% 5% 8%;
   column-count: 3;
-  column-gap: 2%;
+  column-gap: 4%;
 }
 
 .content {
   display: inline-block;
   font-size: 0.8vw;
-  padding: 0% 5% 10% 5%;
+  padding: 0% 0% 10% 0%;
 }
 
 .content > a > img {
@@ -160,7 +160,7 @@ and (orientation : portrait) {
   .header {
     line-height: 35px;
     height: 50px;
-    padding: 1% 8% 1% 8%;
+    padding: 1% 4% 1% 4%;
   }
 
   .header > img {

@@ -1,44 +1,32 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# IdeaWork Code Test
 
-## Available Scripts
+This is a code test for IdeaWork Solutions. IdeaWork provided a .psd mock up and fonts.
 
-In the project directory, you can run:
+## Live Demo
+Play around with the [live demo here](https://ideawork-mock.herokuapp.com/).
 
-### `npm start`
+## Installing Locally
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Clone this repository on your computer.
+2. In the command line, run `npm install`.
+3. Run `npm start` to start your server.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+After you run `npm start`, a tab in your browser should open automatically.
 
-### `npm test`
+## Specs
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![sample.png](public/img/sample.png)
 
-### `npm run build`
+* Please develop this page using React, Javascript, and SASS/SCSS or LESS, refraining from use of jQuery if possible. Your sample will be expected to function properly on IE 11, Edge, and the last 3 versions of Chrome, Firefox, and Safari, as well as on iOS Safari and Chrome (iPhone and iPad). No links are expected to be functional, but please include hover states. Please ensure that these pages are fully responsive from desktop down to 320px-width mobile. Responsive design treatment will be left up to your discretion save where noted below.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* The header should be fixed at the top of the screen as the user scrolls. On mobile, the height of the header should be 50px. Please resize and align items as necessary, keeping the logo to the left, and other items to the right.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+* The wide image with overlaid text is a carousel. No previous/next arrows are necessary, but please include the navigation dots below. Please have each slide advance automatically every 5 seconds and loop back to the beginning when the last slide is reached. Users on touch-enabled devices should be able to swipe between slides. The maximum width of the carousel should be 1440px, centering on screens wider than that. As the screen narrows, keep the height the same, clipping the sides of the image while keeping the text visible and appropriately padded. Once the screen is narrow enough for the carousel to reach a 4:3 ratio, have both the width and height scale with the browser width, maintaining the 4:3 aspect ratio. Text may be resized as necessary.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Items on the masonry grid should be arranged by date. Please scale the grid and item padding with the browser width. The large titles can scale as you deem appropriate, but please keep the smaller text at its current size. Please adjust the grid to 2 columns for iPad Portrait and mobile views (the actual breakpoint is up to your discretion). At this point, please have the padding between the items be the same as the padding between the grid and the edge of the screen.
 
-### `npm run eject`
+## Built With
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+* [React](https://reactjs.org/)
+* [React Responsive Carousel](https://www.npmjs.com/package/react-responsive-carousel)
+* [React Hamburger Menu](https://www.npmjs.com/package/react-hamburger-menu)

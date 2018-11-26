@@ -30,3 +30,4 @@ After you run `npm start`, a tab in your browser should open automatically.
 * [React](https://reactjs.org/)
 * [React Responsive Carousel](https://www.npmjs.com/package/react-responsive-carousel)
 * [React Hamburger Menu](https://www.npmjs.com/package/react-hamburger-menu)
+* [Normalize.css](https://necolas.github.io/normalize.css/)

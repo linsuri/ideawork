@@ -277,7 +277,7 @@ and (min-width : 772px) {
 }
 
 @media only screen
-and (min-width : 1400px) {
+and (min-width : 1200px) {
   .carousal-title {
     font-size: 4vw;
   }
@@ -291,7 +291,7 @@ and (min-width : 1400px) {
   }
 }
 
-/* @media only screen
+@media only screen
 and (min-width : 1600px) {
   .carousal-title {
     font-size: 3vw;
@@ -304,4 +304,19 @@ and (min-width : 1600px) {
   .carousal-p {
     font-size: 1.3vw;
   }
-} */
+}
+
+@media only screen
+and (min-width : 2000px) {
+  .carousal-title {
+    font-size: 2vw;
+  }
+
+  .carousal-date {
+    font-size: 1vw;
+  }
+
+  .carousal-p {
+    font-size: 1vw;
+  }
+}

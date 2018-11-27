@@ -275,3 +275,18 @@ and (min-width : 772px) {
     object-fit: cover;
   }
 }
+
+@media only screen
+and (max-width : 1200px) {
+  .carousal-title {
+    font-size: 4vw;
+  }
+
+  .carousal-date {
+    font-size: 2vw;
+  }
+
+  .carousal-p {
+    font-size: 1.3vw;
+  }
+}

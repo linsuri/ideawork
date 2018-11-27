@@ -302,7 +302,7 @@ and (min-width : 1600px) {
   }
 
   .carousal-p {
-    font-size: 1.3vw;
+    font-size: 1.1vw;
   }
 }
 
@@ -317,6 +317,6 @@ and (min-width : 2000px) {
   }
 
   .carousal-p {
-    font-size: 1vw;
+    font-size: 0.9vw;
   }
 }

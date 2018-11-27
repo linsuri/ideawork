@@ -290,3 +290,18 @@ and (min-width : 1200px) {
     font-size: 1.3vw;
   }
 }
+
+@media only screen
+and (min-width : 1600px) {
+  .carousal-title {
+    font-size: 3vw;
+  }
+
+  .carousal-date {
+    font-size: 1.5vw;
+  }
+
+  .carousal-p {
+    font-size: 1.3vw;
+  }
+}
